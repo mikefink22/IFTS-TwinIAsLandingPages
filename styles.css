@@ -79,7 +79,7 @@ body {
 
 .eyebrow {
     font-family: var(--font-mono);
-    font-size: 0.6875rem;
+    font-size: 0.8rem;
     /* 11px */
     letter-spacing: 0.14em;
     color: var(--text-2);

@@ -59,18 +59,20 @@ Se seleccionó el estilo **Japandi** — fusión del minimalismo japonés y la c
 
 > Estilo seleccionado: **Japandi**
 
-```markdown
-Using a Japandi design aesthetic — the refined fusion of Japanese minimalism and Scandinavian warmth — conceive and build a complete, single-page landing page for an artisanal interior design consultancy that specializes in creating intentional, calming living spaces for urban professionals. 
+### Prompt completo (inglés)
 
-The landing page must include: a sticky navigation header with logo and smooth-scroll anchor links; a hero section with a powerful headline, a short subheading, and a primary call-to-action button; an "About Us" section describing the studio's philosophy; a services or features section showcasing at least three core offerings; a testimonials section with at least two client reviews; a visual contact form (name, email, message fields and a submit button — no backend required); and a footer with social media links. 
+```markdown
+Using a Japandi design aesthetic — the refined fusion of Japanese minimalism and Scandinavian warmth — conceive and build a complete, single-page landing page for an artisanal interior design consultancy that specializes in creating intentional, calming living spaces for urban professionals.
+
+The landing page must include: a sticky navigation header with logo and smooth-scroll anchor links; a hero section with a powerful headline, a short subheading, and a primary call-to-action button; an "About Us" section describing the studio's philosophy; a services or features section showcasing at least three core offerings; a testimonials section with at least two client reviews; a visual contact form (name, email, message fields and a submit button — no backend required); and a footer with social media links.
 
 As visitors arrive and scroll through this single cohesive page, they should feel a quiet sense of arrival — the visual calm of an uncluttered room, the warmth of natural textures translated into digital form. The color palette must incorporate earthy, muted tones: warm off-whites, sage greens, clay terracotta, and deep charcoal, used sparingly and with intention. Typography and spacing should create generous breathing room, guiding the eye downward with the ease of flipping through a handcrafted book. All written content on the landing page — headings, body text, navigation labels, button text, testimonials, form placeholders, and footer — must be written in Spanish (Latin American).
 
-The design philosophy must honor the Japandi principle that beauty lives in restraint. Typography should feel neither cold nor decorative — choose a serif for headlines that carries quiet authority, like ink pressed deliberately into fine paper, and a clean sans-serif for body text that is welcoming and unhurried. All micro-interactions and hover states should feel like a gentle exhale: smooth, slow transitions (300–500ms ease) with no sudden jumps or aggressive effects. 
+The design philosophy must honor the Japandi principle that beauty lives in restraint. Typography should feel neither cold nor decorative — choose a serif for headlines that carries quiet authority, like ink pressed deliberately into fine paper, and a clean sans-serif for body text that is welcoming and unhurried. All micro-interactions and hover states should feel like a gentle exhale: smooth, slow transitions (300–500ms ease) with no sudden jumps or aggressive effects.
 
 The single-page scrolling experience should progress as an emotional arc — from an initial feeling of stillness and curiosity in the hero, through a growing sense of trust and warmth in the about and services sections, into the grounded intimacy of testimonials, arriving finally at a contact form that feels like an open, unhurried invitation. Every section transition should feel inevitable, not abrupt, as if the page breathes between its own parts.
 
-Draw inspiration from the emotional quality of a carefully arranged tea room, where every object placed has a reason and every empty surface is as deliberate as the filled ones — the Japanese concept of ma, the power of negative space. Reference the sensory atmosphere of a Scandinavian design studio in winter: indirect natural light, raw linen, pale wood, the smell of cedar — translated not literally but in spirit into generous whitespace, warm neutral backgrounds, and tactile-feeling surface treatments achieved through subtle border radii and refined shadow-free depth. 
+Draw inspiration from the emotional quality of a carefully arranged tea room, where every object placed has a reason and every empty surface is as deliberate as the filled ones — the Japanese concept of ma, the power of negative space. Reference the sensory atmosphere of a Scandinavian design studio in winter: indirect natural light, raw linen, pale wood, the smell of cedar — translated not literally but in spirit into generous whitespace, warm neutral backgrounds, and tactile-feeling surface treatments achieved through subtle border radii and refined shadow-free depth.
 
 The craftsmanship philosophy of slow, purposeful making should permeate every detail: text at optical sizes that reward reading rather than skimming, section headers that feel hand-lettered in their precision, spacing that never feels rushed. The result must be a single scrolling page that feels less like a website and more like a beautifully designed object — something that earns quiet admiration through its restraint.
 
@@ -78,6 +80,8 @@ Generate the landing page as a structured web project with separate files: index
 
 All files must be linked correctly in the index.html. The layout must be fully responsive and mobile-first. Use rem units for all font sizes and spacing. Use CSS custom properties for all colors, font stacks, and spacing scales. Breakpoints should be defined with min-width media queries at 480px, 768px, and 1024px. All sections must reflow gracefully on screens as narrow as 320px with no horizontal overflow.
 ```
+
+---
 
 > *A diferencia de otros enfoques de prompt engineering orientados a la especificación técnica exhaustiva — donde se define el stack, la estructura de archivos, los nombres de clases CSS y hasta el comportamiento exacto de cada componente — el prompt utilizado en este proyecto adoptó una estrategia basada en atmósfera y filosofía de diseño. En lugar de instruir al agente sobre cómo construir, se le describió cómo debía sentirse el resultado. Esta decisión fue intencional: al reducir las restricciones técnicas y ampliar el espacio semántico, se priorizó evaluar la capacidad del agente para tomar decisiones creativas autónomas — nombre de marca, identidad visual, jerarquía tipográfica, generación de assets — en lugar de su capacidad para seguir instrucciones puntuales. El resultado fue que ambos agentes generaron identidades visuales originales y coherentes sin que el prompt lo solicitara explícitamente.*
 
@@ -101,7 +105,7 @@ All files must be linked correctly in the index.html. The layout must be fully r
 
 ### Agente 1 — Codex (GPT-5.5) · Casa Madori
 
-| Vista general | Navegación responsive | Menú |Redes sociales |
+| Vista general | Navegación responsive | Menú | Redes sociales |
 | --- | --- | --- | --- |
 | ![Desktop completo](./img/casa_madori_desktop.gif) | ![Nav mobile](./img/responsive_nav_madori.gif) | ![Menu](./img/menu_madori.gif) | ![Footer socials](./img/socials-madori.gif) |
 

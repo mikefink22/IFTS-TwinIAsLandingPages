@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ma Espacios — Estudio de diseño interior artesanal para profesionales urbanos. Creamos hogares intencionales, serenos y cálidos.">
+  <title>Ma Espacios | Diseño Interior Artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="inicio">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__logo" aria-label="Ma Espacios — Inicio">
+        <span class="nav__logo-mark" aria-hidden="true">Ma</span>
+        <span class="nav__logo-text">Espacios</span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner container">
+        <p class="hero__eyebrow">Estudio de diseño interior · Ciudad de México</p>
+        <h1 id="hero-heading" class="hero__title">Hogares que respiran calma en medio del ritmo urbano</h1>
+        <p class="hero__subtitle">Diseñamos espacios intencionales para profesionales que buscan un refugio sereno:
+          materiales honestos, luz natural y la belleza de lo esencial.</p>
+        <a href="#contacto" class="btn btn--primary">Agendar una consulta</a>
+      </div>
+      <div class="hero__texture" aria-hidden="true"></div>
+    </section>
+
+    <section class="about section" id="nosotros" aria-labelledby="about-heading">
+      <div class="container about__grid">
+        <div class="about__visual" aria-hidden="true">
+          <div class="about__frame">
+            <div class="about__shape about__shape--sage"></div>
+            <div class="about__shape about__shape--clay"></div>
+          </div>
+        </div>
+        <div class="about__content">
+          <span class="section-label">Nuestra filosofía</span>
+          <h2 id="about-heading" class="section-title">La belleza vive en la intención, no en el exceso</h2>
+          <p class="about__text">En Ma Espacios creemos que un hogar bien diseñado no grita: susurra. Fusionamos la
+            serenidad del minimalismo japonés con la calidez escandinava para crear ambientes donde cada objeto tiene un
+            propósito y cada superficie vacía es tan deliberada como la que está ocupada.</p>
+          <p class="about__text">Trabajamos con artesanos locales, maderas sin tratar, textiles de lino y paletas
+            terrosas que envejecen con gracia. Nuestro proceso es pausado y colaborativo — porque los espacios que
+            perduran se construyen con tiempo, escucha y cuidado.</p>
+          <blockquote class="about__quote">
+            <p>«Un hogar no es un escaparate. Es el lugar donde la vida puede exhalar.»</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section--alt" id="servicios" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Lo que ofrecemos</span>
+          <h2 id="services-heading" class="section-title">Servicios pensados para vivir con calma</h2>
+          <p class="section-intro">Cada proyecto comienza con una conversación. Entendemos cómo habitas tu espacio antes
+            de proponer una sola línea.</p>
+        </header>
+        <ul class="services__grid">
+          <li class="service-card">
+            <span class="service-card__number" aria-hidden="true">01</span>
+            <h3 class="service-card__title">Consultoría de espacios</h3>
+            <p class="service-card__text">Evaluamos tu hogar u oficina con mirada integral: distribución, luz,
+              materiales y flujo cotidiano. Recibes un plan claro y accionable para transformar tu entorno sin prisa.
+            </p>
+          </li>
+          <li class="service-card">
+            <span class="service-card__number" aria-hidden="true">02</span>
+            <h3 class="service-card__title">Diseño de interiores completo</h3>
+            <p class="service-card__text">Desde el concepto hasta la selección de mobiliario artesanal, paleta cromática
+              y acabados. Creamos espacios coherentes donde cada detalle dialoga con el conjunto.</p>
+          </li>
+          <li class="service-card">
+            <span class="service-card__number" aria-hidden="true">03</span>
+            <h3 class="service-card__title">Curaduría de materiales</h3>
+            <p class="service-card__text">Te acompañamos en la elección de maderas, piedras, cerámicas y textiles que
+              aportan calidez táctil. Priorizamos proveedores locales y materiales que envejecen con dignidad.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonios" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">Voces de quienes habitan nuestros diseños</span>
+          <h2 id="testimonials-heading" class="section-title">Confianza construida, espacio a espacio</h2>
+        </header>
+        <ul class="testimonials__grid">
+          <li class="testimonial-card">
+            <blockquote class="testimonial-card__quote">
+              <p>«Ma Espacios transformó mi departamento en un refugio real. Ya no siento que vivo en la ciudad — siento
+                que la ciudad queda afuera. Cada rincón respira calma.»</p>
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <cite class="testimonial-card__name">Valentina Morales</cite>
+              <span class="testimonial-card__role">Arquitecta · Roma Norte, CDMX</span>
+            </footer>
+          </li>
+          <li class="testimonial-card">
+            <blockquote class="testimonial-card__quote">
+              <p>«El proceso fue tan humano como el resultado. Escucharon cómo trabajamos desde casa y diseñaron un
+                estudio-living que fluye con nuestra rutina. Materiales hermosos, cero estridencia.»</p>
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <cite class="testimonial-card__name">Andrés &amp; Camila Ruiz</cite>
+              <span class="testimonial-card__role">Emprendedores · Condesa, CDMX</span>
+            </footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact section section--alt" id="contacto" aria-labelledby="contact-heading">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <span class="section-label">Comencemos juntos</span>
+          <h2 id="contact-heading" class="section-title">Cuéntanos sobre tu espacio</h2>
+          <p class="contact__text">No hay prisa. Déjanos un mensaje y te responderemos en un plazo de 48 horas para
+            agendar una primera conversación sin compromiso.</p>
+          <address class="contact__details">
+            <p><span class="contact__detail-label">Correo</span> <a
+                href="mailto:hola@maespacios.mx">hola@maespacios.mx</a></p>
+            <p><span class="contact__detail-label">Teléfono</span> <a href="tel:+525512345678">+52 55 1234 5678</a></p>
+          </address>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre completo"
+              autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="tu@correo.com"
+              autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="form-input form-input--textarea"
+              placeholder="Cuéntanos sobre tu espacio, tus necesidades y lo que buscas..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="footer__logo" aria-label="Ma Espacios — Inicio">
+          <span class="nav__logo-mark" aria-hidden="true">Ma</span>
+          <span class="nav__logo-text">Espacios</span>
+        </a>
+        <p class="footer__tagline">Diseño interior artesanal para quienes valoran lo esencial.</p>
+      </div>
+      <nav class="footer__social" aria-label="Redes sociales">
+        <ul class="footer__social-list">
+          <li>
+            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://pinterest.com" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Pinterest">
+              <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.599-.299-1.484c0-1.391.806-2.428 1.81-2.428.853 0 1.264.641 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.807 1.481 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.334.135-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.527-2.292-1.155l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.936.29 1.929.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z" />
+              </svg>
+              Pinterest
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Ma Espacios. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

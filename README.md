@@ -13,7 +13,7 @@
 
 ## Deploy
 
-🔗 [Ver sitio en Vercel](https://twinias.vercel.app) <!-- reemplazá con tu URL real -->
+🔗 [Ver sitio en Vercel](https://ifts-twin-ia-landing-pages.vercel.app/)
 
 ---
 
@@ -38,7 +38,7 @@ twinIAs/
 
 ### Fuentes y lineamientos aplicados
 
-El prompt fue diseñado siguiendo las guías oficiales de prompt engineering de [Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) y [OpenAI](https://platform.openai.com/docs/guides/prompt-engineering), tal como indica la consigna. De ambas se extrajeron las siguientes prácticas:
+El prompt fue diseñado siguiendo las guías oficiales de prompt engineering de [Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) y [OpenAI](https://platform.openai.com/docs/guides/prompt-engineering):
 
 - **Instrucciones claras y específicas**: cada requisito de la landing page se describió de forma explícita y sin ambigüedad, evitando instrucciones vagas como "hacé una página bonita".
 - **Contexto rico**: se estableció un concepto de negocio concreto (consultora de diseño de interiores) para que el agente tuviera un marco semántico real desde donde generar el contenido, en lugar de placeholders genéricos.

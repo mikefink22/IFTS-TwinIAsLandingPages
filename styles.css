@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #F7F4EF;
+    --bg-card: #F0EBE3;
+    --border: #D9D2C7;
+    --text-1: #3D3830;
+    --text-2: #7A7265;
+    --accent: #C4846A;
+    --accent-2: #8A9E8C;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --radius: 8px;
+    --transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.terminal {
+    --bg: #0D0D0D;
+    --bg-card: #141414;
+    --border: #1F3320;
+    --text-1: #00FF41;
+    --text-2: #3DBA5F;
+    --accent: #00FF41;
+    --accent-2: #00C832;
+    --font-display: 'JetBrains Mono', monospace;
+    --font-body: 'JetBrains Mono', monospace;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-1);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    transition: background var(--transition), color var(--transition);
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-2);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    padding: 6px 14px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all var(--transition);
+    z-index: 100;
+}
+
+.toggle-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.wrapper {
+    max-width: 640px;
+    width: 100%;
+}
+
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--text-2);
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    transition: color var(--transition);
+}
+
+body.terminal .eyebrow::before {
+    content: '> ';
+    color: var(--accent);
+}
+
+h1 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+    color: var(--text-1);
+    margin-bottom: 0.5rem;
+    transition: font-family var(--transition), color var(--transition);
+}
+
+body:not(.terminal) h1 em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+body.terminal h1 em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.7;
+    margin-bottom: 0.4rem;
+    transition: color var(--transition);
+}
+
+.meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-2);
+    margin-bottom: 3rem;
+    transition: color var(--transition);
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: background var(--transition);
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    animation: sweep 3s ease-in-out infinite;
+}
+
+@keyframes sweep {
+    0% {
+        left: -60%;
+    }
+
+    100% {
+        left: 160%;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: background var(--transition), border-color var(--transition);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-card);
+    text-decoration: none;
+    transition: background var(--transition);
+    cursor: pointer;
+}
+
+.card:hover {
+    background: var(--bg);
+}
+
+body.terminal .card:hover {
+    background: #0F1A10;
+}
+
+.card-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent);
+    min-width: 20px;
+    transition: color var(--transition);
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-1);
+    margin-bottom: 2px;
+    transition: color var(--transition);
+}
+
+body.terminal .card-label::before {
+    content: '// ';
+    color: var(--text-2);
+}
+
+.card-desc {
+    font-size: 12px;
+    color: var(--text-2);
+    transition: color var(--transition);
+}
+
+.card-arrow {
+    font-size: 16px;
+    color: var(--border);
+    transition: color var(--transition), transform 0.2s ease;
+}
+
+.card:hover .card-arrow {
+    color: var(--accent);
+    transform: translateX(3px);
+}
+
+body.terminal .card-arrow {
+    font-family: var(--font-mono);
+}
+
+.card-expand {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--text-2);
+    transition: transform 0.3s ease, color var(--transition);
+    display: inline-block;
+}
+
+.card-prompt.open .card-expand {
+    transform: rotate(180deg);
+    color: var(--accent);
+}
+
+.prompt-panel {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.card-prompt.open .prompt-panel {
+    display: block;
+}
+
+.lang-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.lang-btn {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-2);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition);
+}
+
+.lang-btn:hover {
+    color: var(--accent);
+}
+
+.prompt-text {
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--text-2);
+    white-space: pre-wrap;
+    max-height: 260px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+}
+
+.footer-note {
+    margin-top: 2.5rem;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-2);
+    text-align: center;
+    transition: color var(--transition);
+}
+
+.cursor {
+    display: none;
+    animation: blink 1s step-end infinite;
+}
+
+body.terminal .cursor {
+    display: inline;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .divider::after {
+        animation: none;
+    }
+
+    .cursor {
+        animation: none;
+    }
+}

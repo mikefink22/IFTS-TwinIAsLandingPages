@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PFO2 — Prompt Engineering en Agentes de IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <button class="toggle-btn" onclick="toggleTheme()" id="toggle-label">
+    cambiar a terminal
+  </button>
+
+  <div class="wrapper">
+
+    <p class="eyebrow">PFO2 &mdash; Prompt Engineering en Agentes de IA</p>
+
+    <h1><em>Landing Page</em><br>con Agentes de IA</h1>
+
+    <p class="subtitle">Diseño y ejecución de un prompt de alta precisión<br>ejecutado en dos agentes de desarrollo
+      autónomos.</p>
+    <p class="meta">IFTS N.º 29 &nbsp;·&nbsp; Entrega: 26/06/26<span class="cursor">_</span></p>
+
+    <div class="divider"></div>
+
+    <div class="cards">
+
+      <div class="card card-prompt" onclick="togglePrompt(event)"
+        style="flex-direction: column; align-items: stretch; cursor: pointer;">
+        <div style="display:flex; align-items:center; gap:1.25rem;">
+          <span class="card-num">01</span>
+          <div class="card-body">
+            <p class="card-label">Prompt utilizado</p>
+            <p class="card-desc">Texto plano del prompt de alta precisión</p>
+          </div>
+          <div style="display:flex; gap:12px; align-items:center;">
+            <a href="./prompt.txt" target="_blank" class="card-arrow" onclick="event.stopPropagation()"
+              title="Abrir archivo">→</a>
+            <span class="card-expand" id="expand-icon">↓</span>
+          </div>
+        </div>
+        <div class="prompt-panel" id="prompt-panel">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+            <span class="lang-label" id="lang-label">EN</span>
+            <button class="lang-btn" onclick="toggleLang(event)" id="lang-btn">ver en español</button>
+          </div>
+          <p class="prompt-text" id="prompt-text"></p>
+        </div>
+      </div>
+
+      <a class="card" href="./agent1/" target="_blank">
+        <span class="card-num">02</span>
+        <div class="card-body">
+          <p class="card-label">Landing — Agente 1</p>
+          <p class="card-desc">Nombre del agente · Modelo utilizado</p>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card" href="./agent2/" target="_blank">
+        <span class="card-num">03</span>
+        <div class="card-body">
+          <p class="card-label">Landing — Agente 2</p>
+          <p class="card-desc">Nombre del agente · Modelo utilizado</p>
+        </div>
+        <span class="card-arrow">→</span>
+      </a>
+
+    </div>
+
+    <p class="footer-note" id="footer-note"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<svg width="1440" height="980" viewBox="0 0 1440 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sala Japandi serena</title>
+  <desc id="desc">Ilustración de una sala minimalista con luz natural, madera clara, lino y una rama en cerámica.</desc>
+  <rect width="1440" height="980" fill="#F4EFE6"/>
+  <rect x="102" y="92" width="1236" height="716" rx="34" fill="#ECE4D7"/>
+  <rect x="174" y="152" width="1092" height="584" rx="2" fill="#F8F4EC"/>
+  <path d="M174 735H1266V778C1266 799.539 1248.54 817 1227 817H213C191.461 817 174 799.539 174 778V735Z" fill="#DED0BE"/>
+  <rect x="252" y="203" width="326" height="370" rx="8" fill="#D8DED1"/>
+  <rect x="285" y="235" width="260" height="306" rx="4" fill="#EEF2E9"/>
+  <rect x="662" y="194" width="526" height="285" rx="6" fill="#E8D9CB"/>
+  <path d="M708 424C775.039 356.723 830.794 352.667 875.264 411.831C915.971 465.989 975.396 456.758 1053.54 384.137" stroke="#9EA98E" stroke-width="9" stroke-linecap="round"/>
+  <path d="M701 401C772.073 320.931 838.355 307.331 899.847 360.2C957.664 409.882 1040.95 394.871 1149.71 315.166" stroke="#C7765A" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <rect x="292" y="604" width="498" height="92" rx="18" fill="#4A463F"/>
+  <rect x="358" y="554" width="344" height="72" rx="20" fill="#D8C7B5"/>
+  <rect x="745" y="574" width="190" height="122" rx="16" fill="#B8A891"/>
+  <rect x="948" y="616" width="187" height="80" rx="14" fill="#C7765A" opacity=".72"/>
+  <rect x="260" y="690" width="902" height="18" rx="9" fill="#A7AF98"/>
+  <rect x="318" y="706" width="24" height="64" rx="12" fill="#716A5E"/>
+  <rect x="1086" y="706" width="24" height="64" rx="12" fill="#716A5E"/>
+  <rect x="982" y="494" width="82" height="126" rx="41" fill="#F2E9DC"/>
+  <path d="M1023 496C1006.2 455.2 993.167 416.333 983.9 379.4" stroke="#4A463F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1009 445C966.729 424.087 937.396 399.753 921 372" stroke="#7F8E72" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1016 431C1049.39 402.191 1071.72 373.191 1083 344" stroke="#7F8E72" stroke-width="5" stroke-linecap="round"/>
+  <path d="M984 379C955 355 936.333 329.333 928 302" stroke="#4A463F" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="411" cy="258" rx="57" ry="12" fill="#D8C7B5" opacity=".8"/>
+  <ellipse cx="982" cy="255" rx="93" ry="16" fill="#D8C7B5" opacity=".45"/>
+  <rect x="228" y="795" width="984" height="8" rx="4" fill="#CDBDA9" opacity=".8"/>
+</svg>

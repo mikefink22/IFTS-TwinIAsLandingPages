@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Madori | Diseño interior Japandi</title>
+    <meta
+      name="description"
+      content="Consultoría artesanal de diseño interior para crear espacios urbanos intencionales, serenos y profundamente habitables."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+    <header class="site-header" aria-label="Encabezado principal">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="logo" href="#inicio" aria-label="Casa Madori, inicio">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span>Casa Madori</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Abrir menú</span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="nav-menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Interiores con calma deliberada</p>
+          <h1 id="hero-title">Diseñamos refugios urbanos para vivir con intención.</h1>
+          <p class="hero-text">
+            Creamos hogares serenos para profesionales que buscan pausa, belleza funcional y una relación más honesta con sus espacios.
+          </p>
+          <a class="button" href="#contacto">Agendar una conversación</a>
+        </div>
+
+        <figure class="hero-visual reveal" aria-label="Sala de inspiración Japandi">
+          <img src="assets/sala-japandi.svg" alt="Sala minimalista con tonos naturales, madera clara y luz suave" />
+        </figure>
+      </section>
+
+      <section class="about section-pad" id="nosotros" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nuestra filosofía</p>
+          <h2 id="about-title">Menos ruido, más presencia.</h2>
+        </div>
+        <div class="about-grid">
+          <p class="lead reveal">
+            Casa Madori es un estudio de consultoría interior que une la precisión japonesa con la calidez escandinava. Trabajamos con luz, textura, proporción y silencio visual para que cada ambiente respire sin perder carácter.
+          </p>
+          <div class="about-note reveal">
+            <p>
+              Creemos que un hogar no debe impresionar a primera vista: debe acompañar cada día. Por eso elegimos materiales honestos, paletas suaves y soluciones hechas a la medida de rutinas reales.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-pad" id="servicios" aria-labelledby="services-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Lo que hacemos</p>
+          <h2 id="services-title">Servicios para habitar con ligereza.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <h3>Curaduría espacial</h3>
+            <p>Reordenamos distribución, circulación y puntos focales para que cada metro tenga propósito y descanso visual.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <h3>Paleta y materiales</h3>
+            <p>Seleccionamos tonos, textiles, maderas y acabados naturales que aportan calma sin volver el espacio impersonal.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <h3>Acompañamiento artesanal</h3>
+            <p>Guiamos compras, piezas a medida y decisiones finales con un proceso pausado, claro y profundamente humano.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials section-pad" id="testimonios" aria-labelledby="testimonials-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Voces de clientes</p>
+          <h2 id="testimonials-title">La calma también se nota.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial reveal">
+            <p>
+              "Mi departamento dejó de sentirse como un lugar de paso. Ahora cada rincón tiene una intención tranquila y puedo desconectarme apenas llego."
+            </p>
+            <footer>
+              <cite>Valeria R.</cite>
+              <span>Directora creativa, Ciudad de México</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <p>
+              "Nos ayudaron a elegir menos cosas, pero mejores. El resultado es cálido, ordenado y muy nuestro, sin parecer una vitrina."
+            </p>
+            <footer>
+              <cite>Mateo y Ana P.</cite>
+              <span>Consultores, Bogotá</span>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Primer encuentro</p>
+          <h2 id="contact-title">Cuéntanos qué necesita respirar en tu hogar.</h2>
+          <p>
+            Comparte una idea, una duda o una habitación que quieras transformar. Te responderemos con una propuesta inicial clara y sin prisa.
+          </p>
+        </div>
+
+        <form class="contact-form reveal" action="#" method="post">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" autocomplete="name" required />
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="tu@correo.com" autocomplete="email" required />
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="6" placeholder="Cuéntanos sobre tu espacio" required></textarea>
+
+          <button class="button form-button" type="submit">Enviar mensaje</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="logo" href="#inicio" aria-label="Casa Madori, inicio">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span>Casa Madori</span>
+        </a>
+        <p>Interiores serenos para rutinas urbanas.</p>
+      </div>
+      <div class="social-links" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

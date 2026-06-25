@@ -57,11 +57,9 @@ Se seleccionó el estilo **Japandi** — fusión del minimalismo japonés y la c
 
 ## Prompt utilizado
 
-> Estilo seleccionado: **Japandi**
+> Estilo: **Japandi**
 
-### Prompt completo (inglés)
-
-```markdown
+<details><summary><strong> Ver prompt completo (inglés)</strong></summary>
 Using a Japandi design aesthetic — the refined fusion of Japanese minimalism and Scandinavian warmth — conceive and build a complete, single-page landing page for an artisanal interior design consultancy that specializes in creating intentional, calming living spaces for urban professionals.
 
 The landing page must include: a sticky navigation header with logo and smooth-scroll anchor links; a hero section with a powerful headline, a short subheading, and a primary call-to-action button; an "About Us" section describing the studio's philosophy; a services or features section showcasing at least three core offerings; a testimonials section with at least two client reviews; a visual contact form (name, email, message fields and a submit button — no backend required); and a footer with social media links.
@@ -79,7 +77,7 @@ The craftsmanship philosophy of slow, purposeful making should permeate every de
 Generate the landing page as a structured web project with separate files: index.html for the markup, styles.css for all styling, and script.js for any smooth-scroll or interaction behavior. Use semantic HTML5 elements. CSS must be written without any framework — pure CSS only, using custom properties for the color palette. No external CSS libraries. JavaScript must be vanilla only, no dependencies.
 
 All files must be linked correctly in the index.html. The layout must be fully responsive and mobile-first. Use rem units for all font sizes and spacing. Use CSS custom properties for all colors, font stacks, and spacing scales. Breakpoints should be defined with min-width media queries at 480px, 768px, and 1024px. All sections must reflow gracefully on screens as narrow as 320px with no horizontal overflow.
-```
+</details>
 
 ---
 

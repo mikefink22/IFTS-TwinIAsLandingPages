@@ -29,6 +29,7 @@ twinIAs/
 ├── agent2/
 │   ├── index.html     → landing generada por Agente 2
 │   └── styles.css
+├── imgs               → capturas
 └── README.md
 ```
 

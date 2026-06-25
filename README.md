@@ -87,14 +87,17 @@ Generate the landing page as a structured web project with separate files: index
 
 ## Capturas de pantalla
 
-### Agente 1
-<!-- arrastrá las capturas acá o usá la sintaxis: -->
-<!-- ![Vista desktop agente 1](./screenshots/agent1-desktop.png) -->
-<!-- ![Vista mobile agente 1](./screenshots/agent1-mobile.png) -->
+### Agente 1 — Codex (GPT-5.5) · Casa Madori
 
-### Agente 2
-<!-- ![Vista desktop agente 2](./screenshots/agent2-desktop.png) -->
-<!-- ![Vista mobile agente 2](./screenshots/agent2-mobile.png) -->
+| Vista general | Navegación responsive | Menú |Redes sociales |
+| --- | --- | --- | --- |
+| ![Desktop completo](./img/casa_madori_desktop.gif) | ![Nav mobile](./img/responsive_nav_madori.gif) | ![Menu](./img/menu_madori.gif) | ![Footer socials](./img/socials-madori.gif) |
+
+### Agente 2 — Cursor (Composer 2.5) · Ma Espacios
+
+| Vista desktop 1 | Vista desktop 2 | Formulario | Menú error | Redes sociales |
+| --- | --- | --- | --- | --- |
+| ![Desktop 1](./img/ma_espacios_dk1.gif) | ![Desktop 2](./img/ma_espacios_dk2.gif) | ![Formulario](./img/forms_ma_espacios.gif) | ![Menú error](./img/menu_error_ma_espacios.gif) | ![Socials](./img/ma_espacios_socials.gif) |
 
 ---
 

@@ -1,19 +1,13 @@
-# PFO2: Prompt Engineering en Agentes de IA
-
-## Datos del estudiante
+# PFO2 · Prompt Engineering en Agentes de IA
 
 | Campo | Detalle |
-| ------- | --------- |
-| Nombre | Miguel Angel Flores |
+| --- | --- |
+| Estudiante | Miguel Angel Flores |
 | Comisión | Lunes |
 | Institución | IFTS N.º 29 |
 | Entrega | 26/06/2026 |
 
----
-
-## Deploy
-
-🔗 [Ver sitio en Vercel](https://ifts-twin-ia-landing-pages.vercel.app/)
+🔗 **[Ver sitio en Vercel](https://ifts-twin-ia-landing-pages.vercel.app/)**
 
 ---
 
@@ -21,46 +15,50 @@
 
 ```text
 twinIAs/
-├── index.html         → portada de acceso
-├── prompt.txt         → texto plano del prompt utilizado
+├── index.html       → portada de acceso
+├── prompt.txt       → prompt utilizado
 ├── agent1/
-│   ├── index.html     → landing generada por Agente 1
+│   ├── index.html   → landing · Agente 1
 │   └── styles.css
 ├── agent2/
-│   ├── index.html     → landing generada por Agente 2
+│   ├── index.html   → landing · Agente 2
 │   └── styles.css
-├── imgs               → capturas
+├── imgs/            → capturas
 └── README.md
 ```
 
 ---
 
-## Ingeniería del prompt
+## Agentes utilizados
 
-### Fuentes y lineamientos aplicados
-
-El prompt fue diseñado siguiendo las guías oficiales de prompt engineering de [Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) y [OpenAI](https://platform.openai.com/docs/guides/prompt-engineering):
-
-- **Instrucciones claras y específicas**: cada requisito de la landing page se describió de forma explícita y sin ambigüedad, evitando instrucciones vagas como "hacé una página bonita".
-- **Contexto rico**: se estableció un concepto de negocio concreto (consultora de diseño de interiores) para que el agente tuviera un marco semántico real desde donde generar el contenido, en lugar de placeholders genéricos.
-- **Separación de responsabilidades**: el prompt se dividió en tres párrafos con roles distintos — requisitos funcionales, filosofía de diseño y referencias estéticas — siguiendo el principio de estructurar las instrucciones por capas de abstracción.
-- **Restricciones técnicas explícitas**: se especificó al final del prompt el stack exacto (HTML/CSS/JS vanilla, sin frameworks, archivos separados, mobile-first con `rem`) para acotar el espacio de decisión del agente y evitar outputs impredecibles.
-
-### Por qué el prompt está en inglés
-
-Los modelos de lenguaje grandes como los utilizados en Cursor, Codex y Claude Code fueron entrenados predominantemente con documentación técnica, código y guías de diseño en inglés. Términos como `hero section`, `call-to-action`, `sticky nav` o `micro-interactions` tienen una correspondencia directa y precisa con los patrones que el agente reconoce durante la generación. Escribir el prompt en inglés reduce la fricción de traducción interna del modelo y mejora la fidelidad del output técnico. Para compensar, se agregó explícitamente la instrucción `All written content must be written in Spanish (Latin American)`, separando el idioma del prompt del idioma del contenido generado.
-
-### Elección del estilo visual
-
-Se seleccionó el estilo **Japandi** — fusión del minimalismo japonés y la calidez escandinava — por ser una dirección estética poco frecuente en outputs generados por IA, que tienden a defaultear hacia neobrutalism, dark mode con acento neón, o fondos crema con serif de alto contraste. Elegir un estilo con filosofía propia (el concepto japonés de *ma*, el espacio negativo como elemento activo) obligó al prompt a describir sensaciones y atmósferas en lugar de listar colores y fuentes, lo cual produce instrucciones más ricas y outputs más diferenciados entre agentes.
+| # | Plataforma | Modelo |
+| --- | --- | --- |
+| Agente 1 | Codex (OpenAI) | GPT-5.5 · razonamiento medio |
+| Agente 2 | Cursor | Composer 2.5 Fast (Kimi K2.5) |
 
 ---
 
-## Prompt utilizado
+## Ingeniería del prompt
 
-> Estilo: **Japandi**
+**Estilo elegido: Japandi** — fusión de minimalismo japonés y calidez escandinava.
 
-<details><summary><strong> Ver prompt completo (inglés)</strong></summary>
+Se eligió un estilo con filosofía propia (el concepto de *ma*, el espacio negativo como elemento activo) porque obliga al prompt a describir sensaciones y atmósferas en lugar de listar colores y fuentes. Esto produce instrucciones más ricas y outputs más diferenciados entre agentes — a diferencia de los estilos que los modelos tienden a defaultear (neobrutalism, dark mode con acento neón, fondos crema con serif de alto contraste).
+
+**Fuentes aplicadas:** [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) · [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
+
+| Principio | Aplicación en el prompt |
+| --- | --- |
+| Instrucciones claras y específicas | Cada requisito de la landing se describió de forma explícita, sin ambigüedad |
+| Contexto rico | Concepto de negocio concreto (consultora de diseño de interiores) como marco semántico |
+| Separación de responsabilidades | Tres bloques diferenciados: requisitos funcionales, filosofía de diseño, restricciones técnicas |
+| Restricciones técnicas explícitas | Stack acotado al final: HTML/CSS/JS vanilla, sin frameworks, mobile-first con `rem` |
+| Prompt en inglés | Los modelos fueron entrenados con documentación técnica en inglés; términos como `hero section`, `sticky nav` o `micro-interactions` tienen correspondencia directa con los patrones que el agente reconoce. El idioma del contenido generado se separó con la instrucción explícita: *"All written content must be written in Spanish (Latin American)"* |
+
+### Prompt utilizado
+
+<details>
+<summary><strong>Ver prompt completo (inglés)</strong></summary>
+
 Using a Japandi design aesthetic — the refined fusion of Japanese minimalism and Scandinavian warmth — conceive and build a complete, single-page landing page for an artisanal interior design consultancy that specializes in creating intentional, calming living spaces for urban professionals.
 
 The landing page must include: a sticky navigation header with logo and smooth-scroll anchor links; a hero section with a powerful headline, a short subheading, and a primary call-to-action button; an "About Us" section describing the studio's philosophy; a services or features section showcasing at least three core offerings; a testimonials section with at least two client reviews; a visual contact form (name, email, message fields and a submit button — no backend required); and a footer with social media links.
@@ -78,76 +76,52 @@ The craftsmanship philosophy of slow, purposeful making should permeate every de
 Generate the landing page as a structured web project with separate files: index.html for the markup, styles.css for all styling, and script.js for any smooth-scroll or interaction behavior. Use semantic HTML5 elements. CSS must be written without any framework — pure CSS only, using custom properties for the color palette. No external CSS libraries. JavaScript must be vanilla only, no dependencies.
 
 All files must be linked correctly in the index.html. The layout must be fully responsive and mobile-first. Use rem units for all font sizes and spacing. Use CSS custom properties for all colors, font stacks, and spacing scales. Breakpoints should be defined with min-width media queries at 480px, 768px, and 1024px. All sections must reflow gracefully on screens as narrow as 320px with no horizontal overflow.
+
 </details>
 
----
-
-> *A diferencia de otros enfoques de prompt engineering orientados a la especificación técnica exhaustiva — donde se define el stack, la estructura de archivos, los nombres de clases CSS y hasta el comportamiento exacto de cada componente — el prompt utilizado en este proyecto adoptó una estrategia basada en atmósfera y filosofía de diseño. En lugar de instruir al agente sobre cómo construir, se le describió cómo debía sentirse el resultado. Esta decisión fue intencional: al reducir las restricciones técnicas y ampliar el espacio semántico, se priorizó evaluar la capacidad del agente para tomar decisiones creativas autónomas — nombre de marca, identidad visual, jerarquía tipográfica, generación de assets — en lugar de su capacidad para seguir instrucciones puntuales. El resultado fue que ambos agentes generaron identidades visuales originales y coherentes sin que el prompt lo solicitara explícitamente.*
+> *A diferencia de enfoques orientados a la especificación técnica exhaustiva, el prompt adoptó una estrategia basada en atmósfera y filosofía de diseño: en lugar de instruir al agente sobre **cómo** construir, se le describió **cómo debía sentirse** el resultado. Esto priorizó evaluar la capacidad creativa autónoma del agente — nombre de marca, identidad visual, jerarquía tipográfica — en lugar de su capacidad para seguir instrucciones puntuales.*
 
 ---
 
-## Agentes utilizados
+## Capturas
 
-### Agente 1 — Codex
+### Agente 1 — Codex · Casa Madori
 
-- **Modelo:** GPT-5.5 (razonamiento medio)
-- **Plataforma:** Codex (OpenAI)
-
-### Agente 2 — Cursor
-
-- **Modelo:** Composer 2.5 Fast (base: Kimi K2.5)
-- **Plataforma:** Cursor
-
----
-
-## Capturas de pantalla
-
-### Agente 1 — Codex (GPT-5.5) · Casa Madori
-
-| Vista general | Navegación responsive | Menú | Redes sociales |
+| Vista general | Nav responsive | Menú | Footer |
 | --- | --- | --- | --- |
-| ![Desktop completo](./img/casa_madori_desktop.gif) | ![Nav mobile](./img/responsive_nav_madori.gif) | ![Menu](./img/menu_madori.gif) | ![Footer socials](./img/socials-madori.gif) |
+| ![Desktop](./img/casa_madori_desktop.gif) | ![Nav mobile](./img/responsive_nav_madori.gif) | ![Menú](./img/menu_madori.gif) | ![Socials](./img/socials-madori.gif) |
 
-### Agente 2 — Cursor (Composer 2.5) · Ma Espacios
+### Agente 2 — Cursor · Ma Espacios
 
-| Vista desktop 1 | Vista desktop 2 | Formulario | Menú error | Redes sociales |
+| Vista desktop 1 | Vista desktop 2 | Formulario | Menú | Footer |
 | --- | --- | --- | --- | --- |
-| ![Desktop 1](./img/ma_espacios_dk1.gif) | ![Desktop 2](./img/ma_espacios_dk2.gif) | ![Formulario](./img/forms_ma_espacios.gif) | ![Menú error](./img/menu_error_ma_espacios.gif) | ![Socials](./img/ma_espacios_socials.gif) |
+| ![Desktop 1](./img/ma_espacios_dk1.gif) | ![Desktop 2](./img/ma_espacios_dk2.gif) | ![Formulario](./img/forms_ma_espacios.gif) | ![Menú](./img/menu_error_ma_espacios.gif) | ![Socials](./img/ma_espacios_socials.gif) |
 
 ---
 
 ## Análisis comparativo
 
-Ambos agentes interpretaron el prompt con alto grado de fidelidad al estilo Japandi y cumplieron los 7 requisitos mínimos de la consigna. Sin embargo, las diferencias en decisiones de diseño, arquitectura del código y autonomía creativa son notables.
+Ambos agentes cumplieron los 7 requisitos de la consigna y mostraron alta fidelidad al estilo Japandi. Las diferencias aparecen en decisiones creativas y arquitectura técnica.
 
-### Concepto e identidad visual
+### Identidad visual
 
-Codex (GPT-5.5) nombró el estudio **Casa Madori** — una elección poética que fusiona *casa* en español con *madori* (間取り), que en japonés significa "distribución del espacio". La identidad visual se apoya en un logo geométrico con un círculo partido por una línea diagonal en terracota, minimalista y funcional. Cursor (Composer 2.5) eligió **Ma Espacios**, tomando directamente el concepto japonés de *ma* (間) — el espacio negativo como elemento activo — y lo convirtió en nombre de marca. Ambas elecciones demuestran que los agentes comprendieron la filosofía del prompt más allá de lo superficial.
+| | Codex · Casa Madori | Cursor · Ma Espacios |
+| --- | --- | --- |
+| **Nombre** | *Casa* + *madori* (間取り: distribución del espacio) | *Ma* (間: espacio negativo como elemento activo) |
+| **Logo** | Círculo partido por diagonal en terracota | — |
+| **Tipografía** | `Avenir Next` / `Georgia` (sistema, sin Google Fonts) | `Cormorant Garamond` + `DM Sans` (Google Fonts) |
+| **Asset generado** | SVG ilustración de sala Japandi (no solicitado) | Forma abstracta CSS pura en sección "Nosotros" |
 
-### Tipografía
+### Arquitectura técnica
 
-Codex optó por fuentes del sistema (`Avenir Next`, `Georgia`) sin cargar Google Fonts, lo que reduce dependencias externas pero limita el control tipográfico. Cursor cargó **Cormorant Garamond** para display y **DM Sans** para cuerpo — una pareja más refinada y adecuada para el estilo Japandi, con una escala tipográfica completa definida como custom properties (`--text-xs` a `--text-hero`).
-
-### Arquitectura CSS
-
-Cursor mostró una organización claramente superior: sistema de tokens más granular (escala de espaciado con 9 niveles nombrados semánticamente, escala de tipografía completa, variables para easing y duración de transiciones). Codex fue más conciso pero igualmente funcional. Ambos usaron custom properties para la paleta y `rem` para espaciado, cumpliendo las instrucciones técnicas del prompt.
-
-### Iniciativa creativa
-
-Cursor fue más allá del prompt en varios aspectos: incluyó **iconos SVG inline** para las redes sociales en el footer, agregó **validación de formulario con mensajes de error en español** campo por campo, incluyó información de contacto real (email y teléfono) en la sección de contacto, y añadió un elemento visual abstracto en la sección "Nosotros" usando formas CSS puras en lugar de una imagen. Codex, en cambio, generó un **asset SVG original** (`assets/sala-japandi.svg`) — una ilustración de sala minimalista — que ninguna instrucción del prompt solicitó explícitamente.
-
-### JavaScript
-
-Cursor implementó el script dentro de un **IIFE** (`(function(){"use strict"})()`) con scroll throttling via `requestAnimationFrame`, manejo del historial del navegador con `history.replaceState`, y cierre del menú mobile con la tecla `Escape`. Codex usó un enfoque más directo con `IntersectionObserver` para el reveal de elementos al hacer scroll — una técnica más moderna para animaciones de entrada. Ambos implementaron smooth scroll, menú mobile funcional y nav link activo.
-
-#### Formularios
-
-En cuanto al manejo del formulario de contacto, la diferencia es significativa: Codex delegó la validación íntegramente al navegador mediante atributos HTML nativos, sin lógica JavaScript adicional. Cursor implementó validación manual con mensajes de error en español, foco automático al campo problemático y diferenciación visual entre error y éxito — lo que representa una experiencia de usuario más robusta e independiente del comportamiento del navegador.
-
-### Tiempo y recursos
-
-Codex tardó **10 minutos 59 segundos** y generó 4 archivos (incluyendo el SVG). Cursor fue considerablemente más rápido. En términos de tokens consumidos, el nivel de razonamiento medio en GPT-5.5 fue más costoso pero produjo un resultado igualmente sólido.
+| | Codex | Cursor |
+| --- | --- | --- |
+| **CSS tokens** | Paleta + `rem`, conciso | Escala completa: 9 niveles de espaciado, tipografía `--text-xs` a `--text-hero`, variables de easing |
+| **JavaScript** | `IntersectionObserver` para reveal al scroll | IIFE + scroll throttling con `requestAnimationFrame`, `history.replaceState`, cierre con `Escape` |
+| **Formulario** | Validación nativa HTML (atributos del navegador) | Validación JS manual: mensajes de error en español, foco automático, estados visuales diferenciados |
+| **Footer icons** | Texto / enlaces | SVG inline para redes sociales |
+| **Tiempo de generación** | ~11 minutos · 4 archivos | Considerablemente más rápido |
 
 ### Conclusión
 
-No hay un ganador absoluto. **Codex** demostró mayor autonomía creativa al generar un asset visual sin que se lo pidieran. **Cursor** demostró mayor rigor técnico en la arquitectura del código y más atención a los detalles de UX (validación, accesibilidad, iconos). El prompt funcionó correctamente en ambos agentes — la diferencia en los outputs refleja las fortalezas propias de cada modelo.
+No hay un ganador absoluto. **Codex** mostró mayor autonomía creativa (generó un asset visual sin que se lo pidieran). **Cursor** mostró mayor rigor técnico y atención al detalle de UX. El prompt funcionó en ambos — las diferencias reflejan las fortalezas propias de cada modelo.
